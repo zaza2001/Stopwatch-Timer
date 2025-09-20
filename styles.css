@@ -1,0 +1,204 @@
+body {
+    background-color: #E4E4E7;
+}
+
+.container {
+    width: 100%;
+    max-width: 448px;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 24px;
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.chrono {
+    opacity: 1;
+    margin-top: 24px;
+    font-family: "Inter";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.stopwatch-timer-container {
+    display: flex;
+    background: #f3f4f6;
+    border-radius: 9999px;
+    width: 400px;
+    height: 44px;
+    margin: auto;
+
+}
+
+.tab-btn {
+    flex: 1;
+    width: 196px;
+    height: 36px;
+    border-radius: 9999px;
+    opacity: 1;
+    margin: 4px;
+    border: none;
+    background-color: transparent;
+    font-family: "Inter";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #71717A;
+    cursor: pointer;
+}
+
+.tab-btn.active {
+    background: #ffffff;
+    color: #27272A;
+    font-family: "Inter";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.time {
+    opacity: 1;
+    margin: 48px auto;
+    font-family: "Inter";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 70.17px;
+    line-height: 72px;
+    letter-spacing: -1.8px;
+    text-align: center;
+    vertical-align: middle;
+    color: #27272A;
+}
+
+.index {
+    opacity: 1;
+    font-family: "Inter";
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -1.8px;
+    text-align: center;
+    vertical-align: middle;
+    color: #A1A1AA;
+}
+
+.resetBtn {
+    width: 64px;
+    height: 64px;
+    border-radius: 9999px;
+    opacity: 1;
+    border: none;
+    background-color: #E4E4E7;
+}
+
+.flagBtn {
+    width: 64px;
+    height: 64px;
+    border-radius: 9999px;
+    opacity: 1;
+    border: none;
+    background-color: #E4E4E7;
+
+}
+
+.startBtn {
+    background-color: #067FF9;
+    border-radius: 9999px;
+    border: none;
+    width: 80px;
+    height: 80px;
+    box-shadow: 0px 10px 15px 3px #067FF966;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: -15px
+}
+
+.istoria {
+    opacity: 1;
+    margin-top: 64px;
+    font-family: "Inter";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: #71717A;
+}
+
+.history-card {
+    margin: 25px;
+    border-radius: 16px;
+    opacity: 1;
+    background-color: #F5F7F8;
+    padding: 16px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #E4E4E7;
+}
+
+.session {
+    opacity: 1;
+    font-family: "Inter";
+    font-weight: 400;
+    font-style: "Regular";
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #52525B;
+}
+
+.dro {
+    opacity: 1;
+    font-family: "Inter";
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #27272A;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 3px;
+    }
+
+    .stopwatch-timer-container {
+        width: 100%;
+        max-width: 320px;
+    }
+}
