@@ -2,43 +2,56 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-        rel="stylesheet">
-    <title>Document</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Stopwatch-Timer</title>
 </head>
 
 <body>
-    <div class="container"> <br>
+    <div class="container">
         <p class="chrono">Chrono</p>
+
         <div class="stopwatch-timer-container">
-            <button class="tab-btn active">Stopwatch</button>
-            <button class="tab-btn">Timer</button>
+            <button class="tab-btn active" id="stopwatchbtn">Stopwatch</button>
+            <button class="tab-btn" id="timerbtn">Timer</button>
+        </div>
+        <div id="stopwatchSection">
+            <p class="time" id="stopwatchDisplay">00:00<span class="index">.00</span></p>
+            <div class="controls">
+                <button class="mainBtn resetBtn" id="resetStopwatch"><img src="img/resetBtn.svg"
+                        alt="Reset Btn"></button>
+                <button class="mainBtn startBtn" id="startStopwatch"><img src="img/startBtn.svg"
+                        alt="Start Btn"></button>
+                <button class="mainBtn flagBtn" id="lapStopwatch"><img src="img/flagBtn.svg" alt="Lap Btn"></button>
+            </div>
+            <p class="istoria">History</p>
+            <div class="history-card">
+                <ul id="stopwatchLaps"></ul>
+            </div>
         </div>
 
+        <div id="timerSection" class="hidden">
+            <div class="minutes-seconds">
+                <p>MINUTES</p>
+                <p>SECONDS</p>
+            </div>
+            <div class="minutes-seconds-container">
+                <input type="number" id="timerMinutes" placeholder="00" min="0" />
+                <input type="number" id="timerSeconds" placeholder="00" min="0" max="59" />
+            </div>
 
-        <p class="time" id="display">00:00<span class="index">.00</span></p>
-        <div class="controls">
-            <button class="mainBtn resetBtn" id="resetBtn"><img src="img/resetBtn.svg" alt="Reset Btn"></button>
-            <button class="mainBtn startBtn" id="startBtn"><img src="img/startBtn.svg" alt="Start Btn"></button>
-            <button class="mainBtn flagBtn" id="flagBtn"><img src="img/flagBtn.svg" alt="Flag Btn"></button>
+            <p class="timeTimer" id="timerDisplay">00:00</p>
+
+            <div class="controls">
+                <button class="mainBtn startBtnTimer" id="startTimer"><img src="img/startBtn.svg" alt="Start Btn"></button>
+                <button class="mainBtn resetBtnTimer" id="resetTimer"><img src="img/resetBtn.svg" alt="Reset Btn"></button>
+            </div>
         </div>
-        <p class="istoria">History</p>
-        <div class="history-card">
-            <ul id="laps">
-
         </div>
-
-
-
-
-
     </div>
+
 
 
     <script src="script.js"></script>

@@ -1,204 +1,296 @@
 body {
-    background-color: #E4E4E7;
+  background-color: #e4e4e7;
+  font-family: "Inter", sans-serif;
 }
 
 .container {
-    width: 100%;
-    max-width: 448px;
-    height: auto;
-    margin: 20px auto;
-    border-radius: 24px;
-    background-color: white;
-    text-align: center;
-    padding: 20px;
+  width: 100%;
+  max-width: 448px;
+  margin: 20px auto;
+  background-color: white;
+  border-radius: 24px;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .chrono {
-    opacity: 1;
-    margin-top: 24px;
-    font-family: "Inter";
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 24px;
-    line-height: 32px;
-    letter-spacing: 0%;
-    text-align: center;
-    vertical-align: middle;
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 24px;
+  color: #27272a;
 }
 
 .stopwatch-timer-container {
-    display: flex;
-    background: #f3f4f6;
-    border-radius: 9999px;
-    width: 400px;
-    height: 44px;
-    margin: auto;
-
+  display: flex;
+  background: #F5F7F8;
+  border-radius: 9999px;
+  width: 100%;
+  max-width: 400px;
+  height: 44px;
+  margin: 20px auto;
+  box-sizing: border-box;
 }
 
 .tab-btn {
-    flex: 1;
-    width: 196px;
-    height: 36px;
-    border-radius: 9999px;
-    opacity: 1;
-    margin: 4px;
-    border: none;
-    background-color: transparent;
-    font-family: "Inter";
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0%;
-    text-align: center;
-    vertical-align: middle;
-    color: #71717A;
-    cursor: pointer;
+  flex: 1;
+  border: none;
+  border-radius: 9999px;
+  margin: 4px;
+  background: transparent;
+  font-weight: 700;
+  color: #71717a;
+  cursor: pointer;
 }
 
 .tab-btn.active {
-    background: #ffffff;
-    color: #27272A;
-    font-family: "Inter";
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0%;
-    text-align: center;
-    vertical-align: middle;
+  background: white;
+  color: #27272a;
 }
 
 .time {
-    opacity: 1;
-    margin: 48px auto;
-    font-family: "Inter";
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 70.17px;
-    line-height: 72px;
-    letter-spacing: -1.8px;
-    text-align: center;
-    vertical-align: middle;
-    color: #27272A;
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 70.73px;
+  line-height: 72px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: 48px;
+}
+
+.timeTimer {
+  font-family: "Inter";
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 70.73px;
+  line-height: 72px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  color: #1F2937;
+  margin-top: 40px;
 }
 
 .index {
-    opacity: 1;
-    font-family: "Inter";
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 48px;
-    line-height: 48px;
-    letter-spacing: -1.8px;
-    text-align: center;
-    vertical-align: middle;
-    color: #A1A1AA;
-}
-
-.resetBtn {
-    width: 64px;
-    height: 64px;
-    border-radius: 9999px;
-    opacity: 1;
-    border: none;
-    background-color: #E4E4E7;
-}
-
-.flagBtn {
-    width: 64px;
-    height: 64px;
-    border-radius: 9999px;
-    opacity: 1;
-    border: none;
-    background-color: #E4E4E7;
-
-}
-
-.startBtn {
-    background-color: #067FF9;
-    border-radius: 9999px;
-    border: none;
-    width: 80px;
-    height: 80px;
-    box-shadow: 0px 10px 15px 3px #067FF966;
+  color: #a1a1aa;
+  font-size: 48px;
 }
 
 .controls {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: -15px
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 20px;
+  margin-top: -45px;
+}
+
+.mainBtn {
+  border: none;
+  cursor: pointer;
+
+}
+
+.resetBtnTimer {
+  width: 64px;
+  height: 64px;
+  opacity: 1;
+  border-radius: 9999px;
+  background: #374151;
+  box-shadow: 0px 4px 6px -4px #0000001A;
+
+box-shadow: 0px 10px 15px -3px #0000001A;
+
+}
+
+.startBtnTimer {
+  width: 64px;
+  height: 64px;
+  opacity: 1;
+  border-radius: 9999px;
+  background: #067FF9;
+}
+
+.resetBtn,
+.flagBtn {
+  width: 64px;
+  height: 64px;
+  background: #e4e4e7;
+  border-radius: 9999px;
+}
+
+.startBtn {
+  background: #067ff9;
+  border-radius: 9999px;
+  width: 80px;
+  height: 80px;
+  box-shadow: 0px 10px 15px 3px #067ff966;
 }
 
 .istoria {
-    opacity: 1;
-    margin-top: 64px;
-    font-family: "Inter";
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0%;
-    text-align: center;
-    vertical-align: middle;
-    color: #71717A;
+  margin-top: 64px;
+  font-weight: 500;
+  font-size: 14px;
+  color: #71717a;
+}
+
+.timer-istoria {
+  width: 65px;
+  height: 28px;
+  margin-left: 24px;
+  margin-top: 32px;
+  opacity: 1;
 }
 
 .history-card {
-    margin: 25px;
-    border-radius: 16px;
-    opacity: 1;
-    background-color: #F5F7F8;
-    padding: 16px;
+  margin: 25px;
+  border-radius: 16px;
+  background: #f5f7f8;
+  padding: 16px;
 }
 
 ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 li {
-    display: flex;
-    justify-content: space-between;
-    padding: 12px 0;
-    border-bottom: 1px solid #E4E4E7;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #e4e4e7;
 }
 
 .session {
-    opacity: 1;
-    font-family: "Inter";
-    font-weight: 400;
-    font-style: "Regular";
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0%;
-    vertical-align: middle;
-    color: #52525B;
+  font-weight: 400;
+  color: #52525b;
 }
 
 .dro {
-    opacity: 1;
-    font-family: "Inter";
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 14px;
-    line-height: 20px;
-    letter-spacing: 0%;
-    vertical-align: middle;
-    color: #27272A;
+  font-weight: 500;
+  color: #27272a;
 }
 
-@media (max-width: 480px) {
-    .container {
-        width: 90%;
-        padding: 3px;
-    }
+.minutes-seconds {
+  display: flex;
+  justify-content: center;
+  gap: 148px;
+  font-weight: 500;
+  font-size: 12px;
+  color: #6b7280;
+  text-transform: uppercase;
+  flex-wrap: wrap;
+}
 
-    .stopwatch-timer-container {
-        width: 100%;
-        max-width: 320px;
-    }
+#timerMinutes,
+#timerSeconds {
+  background: #F5F7F8;
+  width: 192px;
+  height: 58px;
+  opacity: 1;
+  border-radius: 8px;
+  border-width: 1px;
+}
+
+.minutes-seconds-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+
+}
+
+input {
+  width: 192px;
+  height: 58px;
+  border-radius: 8px;
+  border: 1px solid #f5f7f8;
+  background: #e5e7eb;
+  font-weight: 700;
+  font-size: 24px;
+  color: #27272a;
+  text-align: center;
+  box-sizing: border-box;
+  max-width: 45%;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .time {
+    font-size: 50px;
+  }
+
+  .index {
+    font-size: 32px;
+  }
+
+  .stopwatch-timer-container {
+    max-width: 90%;
+    height: 40px;
+  }
+
+  .controls {
+    gap: 10px;
+  }
+
+  .minutes-seconds {
+    gap: 60px;
+  }
+
+  input {
+    width: 100%;
+    max-width: 160px;
+  }
+
+  .history-card {
+    margin: 16px;
+    padding: 12px;
+  }
+}
+
+
+@media (max-width: 400px) {
+  .container {
+    padding: 12px;
+  }
+
+  .time {
+    font-size: 40px;
+  }
+
+  .index {
+    font-size: 28px;
+  }
+
+  .minutes-seconds {
+    gap: 148px;
+    flex-direction: row;
+  }
+
+  .minutes-seconds-container {
+    flex-direction:row;
+    gap: 16px;
+  }
+
+  input {
+    width: 100%;
+    max-width: 140px;
+  }
+
+  .startBtn {
+    width: 70px;
+    height: 70px;
+  }
+
+  .resetBtn,
+  .flagBtn {
+    width: 56px;
+    height: 56px;
+  }
 }
